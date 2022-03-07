@@ -4,8 +4,9 @@
       <img src="../assets/img/avada-freelance-logo.png" alt="">
     </div>
    
-      <MenuFooter :liste="liste" />
+      <MenuFooter :liste="liste" :socials="socials" />
        
+
      
    
   </footer>
@@ -16,7 +17,8 @@ import MenuFooter from "./partials/MenuFooter.vue";
 export default {
   name: "MyFooter",
   props: {
- liste: Array,
+ liste: [],
+ socials: []
   },
  
   components: {
@@ -30,7 +32,11 @@ export default {
 
 <style>
 footer{
-  background-color: aqua;
-height: 200px;
+  background-color: black;
+
+}
+
+footer .title{
+  padding: 30px;
 }
 </style>

@@ -1,7 +1,8 @@
 <template>
 
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar   navbar-dark">
     <div class="container-fluid">
+      <img src="../../assets/img/avada-freelance-logo.png">
       <button
         class="navbar-toggler"
         type="button"
@@ -15,6 +16,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -23,14 +25,9 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <div v-for="(item,index) in items" :key="index">
-               
-                 <a href= "#" > {{item.text }}</a> 
-
-                <!-- da aggiungere  
-                       <a href= {{ item.section }}> {{ item.text }}</a> 
-                -->
-              </div>
+            <div v-for="(item,index) in items" :key="index">
+             <a :href= "`{item.section}`" > {{item.text }}</a> 
+            </div>
             </a>
           </li>
         </ul>
@@ -43,6 +40,7 @@
 export default {
   name: "MenuHeader",
   props: {
+   
     items: Object,
   },
  
@@ -50,4 +48,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+a {
+     font-size:30px; 
+     text-decoration: none;
+     color:white;
+ }
 </style>

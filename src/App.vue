@@ -3,7 +3,7 @@
     <HelloWorld />
     <MyHeader :items="items" />
     <MyMain />
-    <MyFooter :liste="liste" />
+    <MyFooter :liste="liste" :socials="socials"  />
   </div>
 </template>
 
@@ -28,51 +28,74 @@ export default {
         {
           text: "About Me",
          
-          section: "a",
+          section: "#aboutme",
         },
         {
           text: "Why Work With Me",
        
-          section: "B",
+          section: "#work",
         },
         {
           text: "Recent Work",
         
-          section: "C",
+          section: "#recent",
         },
         {
           text: "View All Work",
       
-          section: "apple",
+          section: "#apple",
         },
         {
           text: "Expert Design Advice",
          
-          section: "E",
+          section: "#E",
         },
         {
           text: "Let's Work Together",
          
-          section: "F",
+          section: "#F",
         },
       ],
         
       liste: [
         {
-          text: "Copyright 2012-2020",
+          text: "Copyright 2012-2020 |",
+          url: "#",
         },
         {
-          text: "Avada Theme by Theme Fusion",
+          text: "Avada Theme by Theme Fusion |",
+              url: "#",
         },
         {
-          text: "All rights reserved",
+          text: "All rights reserved |",
+              url: "#",
         },
         {
           text: "Powered by wordpress",
+              url: "#",
         },
        
       
       ],
+
+      socials: [
+           {
+          icon: "fa-brands fa-facebook",
+          url: "#"
+        },
+        {
+          icon: "fa-brands fa-twitter",
+           url: "#"
+        },
+        {
+          icon: "fa-brands fa-youtube",
+           url: "#"
+        },
+        {
+          icon: "fa-brands fa-instagram",
+           url: "#"
+        },
+      ]
       
     
 
