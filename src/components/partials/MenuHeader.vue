@@ -40,8 +40,7 @@
 export default {
   name: "MenuHeader",
   props: {
-   
-    items: Object,
+       items: Object,
   },
  
 };

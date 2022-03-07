@@ -1,21 +1,11 @@
 <template>
   <main>
-    <!--section-jumbotron-->
-    <section id="jumbotron">
-  
-        <div class="container">
-          <div class="row align-middle">
-            <div class="col  text-center">
-              <h2>Avatar freelancer</h2>
-              <h1>Art Director</h1>
-              <p>if it doesn't challenge you, it doesnt change you</p>
-            </div>
-          </div>
-        </div>
 
-        
+  <!--section jumbotron-->
 
-    </section>
+   <MenuJumbotron />
+
+<!--fine section jumbotron-->
     <!--section about-->
     <section id="about">
      
@@ -62,8 +52,7 @@
        </div>
      
     </section>
-    
-    <!--fine section about-->
+        <!--fine section about-->
 
     <!--inizio section work-->
     <section id="work">
@@ -318,42 +307,20 @@
 </template>
 
 <script>
+import MenuJumbotron from "./partials/MenuJumbotron.vue";
 export default {
   name: "MyMain",
+  components: {
+  MenuJumbotron,
+  },
 };
+
 </script>
 
 <style>
 
 /*section jumbotron*/
-#jumbotron{
-  background-image: url("../assets/img/freelancer_thumbnail.jpg");
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  
-}
 
-#jumbotron .container{
-  height: 100%;
-  width: 100%;
-}
-
-.row h1 {
-  color: #f9245c;
-  font-size: 150px;
-}
-.row h2 {
-  color: white;
-  font-size: 50px;
-}
-.row p {
-  color: grey;
-  font-size: 30px;
- 
-}
 /* fine section jumbotron*/
 
 /*section about*/
